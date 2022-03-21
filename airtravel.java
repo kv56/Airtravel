@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.util.HashMap;
 
 public class airtravel{
     public static void main(String[] args){
