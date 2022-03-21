@@ -8,14 +8,14 @@ public class airtravel{
         String line;
         int sum1=0,sum2=0,sum3=0;
         int i=0;
-        HashMap<String,Integer> hm=new HashMap<String,Integer>();
         try (BufferedReader br =
                      new BufferedReader(new FileReader(file))){
                         while((line = br.readLine()) != null){
                             if(i!=0){
-                             sum1 += Integer.parseInt((line.split(","+"  "))[1]);
-                            sum2 += Integer.parseInt((line.split(","+"  "))[2]);
-                             sum3 += Integer.parseInt((line.split(","+"  "))[3]);
+                                String[] key=(line.split(",");
+                             sum1 += Integer.parseInt(key[1].trim());
+                            sum2 += Integer.parseInt(key[2].trim());
+                             sum3 += Integer.parseInt(key[3].trim());
                             i=i+1;
                         }
                             else{
